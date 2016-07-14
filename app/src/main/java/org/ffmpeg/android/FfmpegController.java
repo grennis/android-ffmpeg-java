@@ -319,7 +319,7 @@ public class FfmpegController {
 		if (out.duration > 0)
 		{
 			cmd.add(Argument.DURATION);
-			cmd.add(out.duration);
+			cmd.add(String.valueOf(out.duration));
 		}
 		
 		if (enableExperimental)
